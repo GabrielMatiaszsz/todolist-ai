@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import {Toaster} from 'sonner'
 
 import './index.css'
-import Aplicativo from './app'
+import {App} from './app'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Aplicativo />
+    <App />
+    <Toaster richColors/>
   </React.StrictMode>,
 )
